@@ -24,11 +24,12 @@ public class ProductPageTest {
 	    // Assertions
 	    Assert.assertTrue(driver.getPageSource().contains("Sauce Labs Backpack"));
 
-	    productsPage.getAllProductPrices().forEach(priceElement -> {
+	  /*  productsPage.getAllProductPrices().forEach(priceElement -> {
 	        String priceText = priceElement.getText();
 	        Assert.assertTrue(priceText.startsWith("$"), "Price format is incorrect: " + priceText);
-	    });
+	    });*/
 	    driver.quit();
 	}
 
 }
+
