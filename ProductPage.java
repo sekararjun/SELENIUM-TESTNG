@@ -38,6 +38,7 @@ public class ProductPage {
 
     public void addProductToCart(String productName) {
         driver.findElement(By.xpath("//div[text()='" + productName + "']/ancestor::div[@class='inventory_item']//button")).click();
+        ////div[text()='Sauce Labs Bike Light']/../../following-sibling::div[@class='pricebar']//button[text()='Add to cart']
     }
 
     public void removeProductFromCart(String productName) {
@@ -58,3 +59,4 @@ public class ProductPage {
         return driver.getTitle();
     }
 }
+
